@@ -258,6 +258,8 @@ sudo pip3.10 install poetry
 #install dependencies
 poetry install
 
+sudo pip3.10 install psycopg2
+
 #try to run create.py if it fails, then give db user superuser privileges
 mv database/create.py .
 $(poetry env info --path)/bin/python3.10 create.py || sudo -u postgres psql -c "ALTER USER $database_user WITH SUPERUSER;" && $(poetry env info --path)/bin/python3.10 create.py
