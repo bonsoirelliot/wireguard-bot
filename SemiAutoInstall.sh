@@ -13,7 +13,7 @@ sudo apt install -y curl iptables
 clear
 
 #get server external ip
-server_ip=$(curl -s ifconfig.me)
+server_ip=$(curl -s https//:ifconfig.me)
 
 if [ -z "$server_ip" ]
 then
