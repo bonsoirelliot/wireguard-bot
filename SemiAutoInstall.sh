@@ -163,7 +163,7 @@ sleep 5
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git bat
-git clone https://github.com/PheeZz/wireguard-bot.git
+git clone https://github.com/bonsoirelliot/wireguard-bot.git
 
 #install zsh, curl
 sudo apt install -y curl
